@@ -6,8 +6,8 @@ import java.awt.*;
  */
 public class Okno3 extends JFrame{
     private JPanel rootPanel;
-    private JPanel leftPanel;
     private JPanel rightPanel;
+    private JPanel leftPanel;
     private JTextField textField1;
     private JTextField textField2;
 
