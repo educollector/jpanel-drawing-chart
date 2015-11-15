@@ -14,5 +14,13 @@ public class Okno3 extends JFrame{
         setContentPane(rootPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
+        setSize(600,600);
     }
+
+//    @Override
+//    public void paint(Graphics g)
+//    {
+//        g.drawLine(100,100, 200, 200);
+//
+//    }
 }
