@@ -5,8 +5,9 @@ import java.awt.*;
  * Created by olaskierbiszewska on 15.11.15.
  */
 public class Okno3 extends JFrame{
-    private JButton button1;
     private JPanel rootPanel;
+    private JPanel leftPanel;
+    private JPanel rightPanel;
 
     public Okno3() {
         super("yolo");
