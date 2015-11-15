@@ -8,8 +8,16 @@ public class Okno3 extends JFrame{
     private JPanel rootPanel;
     private JPanel rightPanel;
     private JPanel leftPanel;
-    private JTextField textField1;
-    private JTextField textField2;
+    private JTextField t1x;
+    private JTextField t1y;
+    private JTextField t2x;
+    private JTextField t2y;
+    private JTextField t3x;
+    private JTextField t3y;
+    private JTextField t4x;
+    private JTextField t5x;
+    private JTextField t4y;
+    private JTextField t5y;
 
     public Okno3() {
         super("yolo");
