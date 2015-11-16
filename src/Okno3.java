@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.geom.Arc2D;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,17 +24,12 @@ public class Okno3 extends JFrame implements ActionListener{
     private JTextField t3y;
     private JTextField t4y;
     private JButton obliczButton;
-
     private JLabel labelArea;
+    private JButton testDataButton;
+
     public void setLabelArea(JLabel labelArea) {
         this.labelArea = labelArea;
     }
-
-
-
-    private float circuit;
-    private float area;
-    private Point[] myPoints = new Point[5];
     private List<Point> myPointsList = new ArrayList();
 
 
@@ -43,18 +39,43 @@ public class Okno3 extends JFrame implements ActionListener{
         setContentPane(rootPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
-        setSize(600,600);
+        setSize(600, 600);
 
         obliczButton.addActionListener(this);
-        this.setTestData();
+
         //area = this.calculateArea();
+
+        testDataButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                t0x.setText("1");
+                t0y.setText("1");
+                t1x.setText("2");
+                t1y.setText("4");
+                t2x.setText("3");
+                t2y.setText("4");
+                t3x.setText("4");
+                t3y.setText("4");
+                t4x.setText("5");
+                t4y.setText("1");
+            }
+        });
     }
 
 //    @Override
-//    public void paint(Graphics g)
-//    {
-//        g.drawLine(100,100, 200, 200);
-//
+//    public void paint(Graphics g) {
+//        rightPanel.paint(g);
+//        if(myPointsList.size()>0){
+//            for(int i=0; i<myPointsList.size(); ++i){
+//                if(i==myPointsList.size()-1){
+//                    g.drawLine(myPointsList.get(i).x*100,myPointsList.get(i).y*100,
+//                            myPointsList.get(0).x*100, myPointsList.get(0).y*100);
+//                }else{
+//                    g.drawLine(myPointsList.get(i).x*100, myPointsList.get(i).y*100,
+//                            myPointsList.get(i+1).x*100, myPointsList.get(i+1).y*100);
+//                }
+//            }
+//        }
 //    }
 
 
@@ -91,7 +112,7 @@ public class Okno3 extends JFrame implements ActionListener{
         t4y.setText("1");
     }
 
-    public float calculateAreaUserData(){
+    public void readTextFieldsData(){
         JTextField[] fieldsArray = {t0x, t0y, t1x, t1y, t2x, t2y, t3x, t3y, t4x, t4y};
         Integer x = 0;
         Integer y = 0;
@@ -105,6 +126,27 @@ public class Okno3 extends JFrame implements ActionListener{
                 }
             }
         }
+    }
+    private double calculatePerimeter(){
+        this.readTextFieldsData();
+        double perimeter = 0;
+        for(int i=0; i<myPointsList.size(); ++i){
+            if(i==myPointsList.size()-1){
+                perimeter += this.pointsDistance(myPointsList.get(i), myPointsList.get(0));
+            }else{
+                perimeter += this.pointsDistance(myPointsList.get(i), myPointsList.get(i+1));
+            }
+        }
+        System.out.print("perimeter: " + perimeter);
+        return perimeter;
+    }
+
+    private double pointsDistance(Point p1, Point p2) {
+        return Math.sqrt(Math.pow((p2.x-p1.x),2) + Math.pow((p2.y - p1.y),2));
+    }
+
+    private float calculateAreaUserData(){
+        this.readTextFieldsData();
         int num_points = myPointsList.size();
         Point[] pts = new Point[num_points + 1];
         for(int i=0; i<myPointsList.size(); ++i){
@@ -124,7 +166,7 @@ public class Okno3 extends JFrame implements ActionListener{
         if(ae.getSource() == obliczButton) {
             float area = this.calculateAreaUserData();
             System.out.print("area" + area);
-            labelArea.setText("Pole: " + this.calculateAreaUserData());
+            labelArea.setText("Pole: " + this.calculateAreaUserData() + " Obwód: " + this.calculatePerimeter());
         }
     }
 }
