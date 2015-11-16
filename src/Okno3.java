@@ -12,16 +12,16 @@ public class Okno3 extends JFrame implements ActionListener{
     private JPanel rootPanel;
     private JPanel rightPanel;
     private JPanel leftPanel;
+    private JTextField t0x;
+    private JTextField t0y;
     private JTextField t1x;
     private JTextField t1y;
     private JTextField t2x;
     private JTextField t2y;
     private JTextField t3x;
-    private JTextField t3y;
     private JTextField t4x;
-    private JTextField t5x;
+    private JTextField t3y;
     private JTextField t4y;
-    private JTextField t5y;
     private JButton obliczButton;
 
     private JLabel labelArea;
@@ -34,6 +34,7 @@ public class Okno3 extends JFrame implements ActionListener{
     private float circuit;
     private float area;
     private Point[] myPoints = new Point[5];
+    private List<Point> myPointsList = new ArrayList();
 
 
     public Okno3() {
@@ -45,6 +46,7 @@ public class Okno3 extends JFrame implements ActionListener{
         setSize(600,600);
 
         obliczButton.addActionListener(this);
+        this.setTestData();
         //area = this.calculateArea();
     }
 
@@ -76,38 +78,43 @@ public class Okno3 extends JFrame implements ActionListener{
         return area;
     }
 
+    public void setTestData(){
+        t0x.setText("1");
+        t0y.setText("1");
+        t1x.setText("2");
+        t1y.setText("4");
+        t2x.setText("3");
+        t2y.setText("4");
+        t3x.setText("4");
+        t3y.setText("4");
+        t4x.setText("5");
+        t4y.setText("1");
+    }
+
     public float calculateAreaUserData(){
-
-        JTextField[] fieldsArray = {t1x,t1y,t2x,t2y,t3x,t3y,t4x,t4y,t5x,t5y};
-
-        Integer x = Integer.parseInt(t1x.getText());
-        Integer y = Integer.parseInt(t1y.getText());
-        myPoints[0] = new Point(x,y);
-        x = Integer.parseInt(t2x.getText());
-        y = Integer.parseInt(t2y.getText());
-        myPoints[1] = new Point(x,y);
-        x = Integer.parseInt(t3x.getText());
-        y = Integer.parseInt(t3y.getText());
-        myPoints[2] = new Point(x,y);
-        x = Integer.parseInt(t4x.getText());
-        y = Integer.parseInt(t4y.getText());
-        myPoints[3] = new Point(x,y);
-        x = Integer.parseInt(t5x.getText());
-        y = Integer.parseInt(t5y.getText());
-        myPoints[4] = new Point(x,y);
-
-        //**************************************
-        int num_points = myPoints.length;
-        Point[] pts = new Point[num_points + 1];
-        for(int i=0; i<myPoints.length; ++i){
-            pts[i] = myPoints[i];
+        JTextField[] fieldsArray = {t0x, t0y, t1x, t1y, t2x, t2y, t3x, t3y, t4x, t4y};
+        Integer x = 0;
+        Integer y = 0;
+        int length = fieldsArray.length;
+        for(int i=0; i<length; ++i){
+            if(i==0 || i%2==0){
+                if((!fieldsArray[i].getText().equals("")) && (!fieldsArray[i+1].getText().equals(""))){
+                    x = Integer.parseInt(fieldsArray[i].getText());
+                    y = Integer.parseInt(fieldsArray[i+1].getText());
+                    myPointsList.add(new Point(x,y));
+                }
+            }
         }
-        pts[num_points] = myPoints[0]; //!!
+        int num_points = myPointsList.size();
+        Point[] pts = new Point[num_points + 1];
+        for(int i=0; i<myPointsList.size(); ++i){
+            pts[i] = myPointsList.get(i);
+        }
+        pts[num_points] = myPointsList.get(0); //!!
         float area = 0;
         for (int i = 0; i < num_points; ++i){
             area +=(pts[i + 1].x - pts[i].x) * (pts[i + 1].y + pts[i].y) / 2;
         }
-
         return area;
     }
 
@@ -116,7 +123,8 @@ public class Okno3 extends JFrame implements ActionListener{
 
         if(ae.getSource() == obliczButton) {
             float area = this.calculateAreaUserData();
-            labelArea.setText("Pole: " + area);
+            System.out.print("area" + area);
+            labelArea.setText("Pole: " + this.calculateAreaUserData());
         }
     }
 }

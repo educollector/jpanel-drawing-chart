@@ -61,7 +61,7 @@
               <text value="xy"/>
             </properties>
           </component>
-          <component id="18df4" class="javax.swing.JTextField" binding="t1x">
+          <component id="18df4" class="javax.swing.JTextField" binding="t0x">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="-1"/>
@@ -71,7 +71,7 @@
             </constraints>
             <properties/>
           </component>
-          <component id="798f6" class="javax.swing.JTextField" binding="t1y">
+          <component id="798f6" class="javax.swing.JTextField" binding="t0y">
             <constraints>
               <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="-1"/>
@@ -86,7 +86,7 @@
               <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
           </hspacer>
-          <component id="673b3" class="javax.swing.JTextField" binding="t3x">
+          <component id="673b3" class="javax.swing.JTextField" binding="t2x">
             <constraints>
               <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="-1"/>
@@ -96,7 +96,7 @@
             </constraints>
             <properties/>
           </component>
-          <component id="c6bf8" class="javax.swing.JTextField" binding="t2y">
+          <component id="c6bf8" class="javax.swing.JTextField" binding="t1y">
             <constraints>
               <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="-1"/>
@@ -106,7 +106,7 @@
             </constraints>
             <properties/>
           </component>
-          <component id="cb938" class="javax.swing.JTextField" binding="t2x">
+          <component id="cb938" class="javax.swing.JTextField" binding="t1x">
             <constraints>
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="-1"/>
@@ -116,7 +116,7 @@
             </constraints>
             <properties/>
           </component>
-          <component id="a104b" class="javax.swing.JTextField" binding="t3y">
+          <component id="a104b" class="javax.swing.JTextField" binding="t2y">
             <constraints>
               <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="-1"/>
@@ -126,7 +126,7 @@
             </constraints>
             <properties/>
           </component>
-          <component id="be040" class="javax.swing.JTextField" binding="t5x">
+          <component id="be040" class="javax.swing.JTextField" binding="t4x">
             <constraints>
               <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="-1"/>
@@ -136,7 +136,7 @@
             </constraints>
             <properties/>
           </component>
-          <component id="6a3c1" class="javax.swing.JTextField" binding="t4y">
+          <component id="6a3c1" class="javax.swing.JTextField" binding="t3y">
             <constraints>
               <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="-1"/>
@@ -146,7 +146,7 @@
             </constraints>
             <properties/>
           </component>
-          <component id="fa2c5" class="javax.swing.JTextField" binding="t4x">
+          <component id="fa2c5" class="javax.swing.JTextField" binding="t3x">
             <constraints>
               <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="-1"/>
@@ -156,7 +156,7 @@
             </constraints>
             <properties/>
           </component>
-          <component id="4e694" class="javax.swing.JTextField" binding="t5y">
+          <component id="4e694" class="javax.swing.JTextField" binding="t4y">
             <constraints>
               <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
                 <minimum-size width="50" height="-1"/>
