@@ -2,7 +2,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.geom.Arc2D;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,6 +25,8 @@ public class Okno3 extends JFrame implements ActionListener{
     private JButton obliczButton;
     private JLabel labelArea;
     private JButton testDataButton;
+    private JTextArea textArea1;
+    private JLabel xy;
 
     public void setLabelArea(JLabel labelArea) {
         this.labelArea = labelArea;
@@ -34,7 +35,7 @@ public class Okno3 extends JFrame implements ActionListener{
 
 
     public Okno3() {
-        super("yolo");
+        super("App");
         pack();
         setContentPane(rootPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -43,7 +44,7 @@ public class Okno3 extends JFrame implements ActionListener{
 
         obliczButton.addActionListener(this);
 
-        //area = this.calculateArea();
+        textArea1.setText("Wprowadź współrzędne (x,y)\n kolejnych punktów");
 
         testDataButton.addActionListener(new ActionListener() {
             @Override
@@ -168,5 +169,9 @@ public class Okno3 extends JFrame implements ActionListener{
             System.out.print("area" + area);
             labelArea.setText("Pole: " + this.calculateAreaUserData() + " Obwód: " + this.calculatePerimeter());
         }
+    }
+
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
     }
 }
