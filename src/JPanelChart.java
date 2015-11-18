@@ -1,6 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
-import java.util.*;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -23,18 +23,8 @@ public class JPanelChart extends JPanel {
     }
 
     @Override
-    public void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        if(myPointsList.size()>0){
-            for(int i=0; i<myPointsList.size(); ++i){
-                if(i==myPointsList.size()-1){
-                    g.drawLine(myPointsList.get(i).x*100,myPointsList.get(i).y*100,
-                            myPointsList.get(0).x*100, myPointsList.get(0).y*100);
-                }else{
-                    g.drawLine(myPointsList.get(i).x*100, myPointsList.get(i).y*100,
-                            myPointsList.get(i+1).x*100, myPointsList.get(i+1).y*100);
-                }
-            }
-        }
+    public void paint(Graphics g) {
+        System.out.println("paint");
+        super.paint(g);
     }
 }

@@ -175,5 +175,6 @@ public class Okno3 extends JFrame implements ActionListener{
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
+        chartPanel = new JPanelChart();
     }
 }
