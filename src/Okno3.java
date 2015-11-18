@@ -10,8 +10,7 @@ import java.util.List;
  */
 public class Okno3 extends JFrame implements ActionListener{
     private JPanel rootPanel;
-    private JPanel rightPanel;
-    private JPanel leftPanel;
+    private JPanel leftPointsPanel;
     private JTextField t0x;
     private JTextField t0y;
     private JTextField t1x;
@@ -26,6 +25,9 @@ public class Okno3 extends JFrame implements ActionListener{
     private JLabel labelArea;
     private JButton testDataButton;
     private JTextArea textArea1;
+    private JPanel leftPanel;
+    private JPanel rightPanel;
+    private JPanel chartPanel;
     private JLabel xy;
 
     public void setLabelArea(JLabel labelArea) {
