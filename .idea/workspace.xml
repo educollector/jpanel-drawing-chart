@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c8423b7-653a-47e8-9d84-1eaefb8ab02d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/interpolacja-gap3/JPanelChart.class" afterPath="$PROJECT_DIR$/out/production/interpolacja-gap3/JPanelChart.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/interpolacja-gap3/Okno3$1.class" afterPath="$PROJECT_DIR$/out/production/interpolacja-gap3/Okno3$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/interpolacja-gap3/Okno3.class" afterPath="$PROJECT_DIR$/out/production/interpolacja-gap3/Okno3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Okno3.form" afterPath="$PROJECT_DIR$/src/Okno3.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JPanelChart.java" afterPath="$PROJECT_DIR$/src/JPanelChart.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Okno3.java" afterPath="$PROJECT_DIR$/src/Okno3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="interpolacja-gap3.iws" />
@@ -33,27 +34,42 @@
         <entry file="file://$PROJECT_DIR$/src/Okno3.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="176" column="58" selection-start-line="176" selection-start-column="58" selection-end-line="176" selection-end-column="58" />
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1985#1986#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JPanelChart.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JPanelChart.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JPanelChart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.85979384">
+              <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#229#230#0" expanded="true" />
+                <element signature="e#264#265#0" expanded="true" />
+                <element signature="e#325#326#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Okno3.form" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JComponent.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/src.zip!/javax/swing/JComponent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4311" column="15" selection-start-line="4311" selection-start-column="15" selection-end-line="4311" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Okno3.form" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Okno3.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
@@ -83,9 +99,9 @@
         <option value="$PROJECT_DIR$/src/Okno.java" />
         <option value="$PROJECT_DIR$/src/Okno.form" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/JPanelChart.java" />
-        <option value="$PROJECT_DIR$/src/Okno3.java" />
         <option value="$PROJECT_DIR$/src/Okno3.form" />
+        <option value="$PROJECT_DIR$/src/Okno3.java" />
+        <option value="$PROJECT_DIR$/src/JPanelChart.java" />
       </list>
     </option>
   </component>
@@ -131,7 +147,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -142,81 +158,7 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interpolacja-gap3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interpolacja-gap3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interpolacja-gap3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interpolacja-gap3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interpolacja-gap3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Okno3" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interpolacja-gap3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interpolacja-gap3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interpolacja-gap3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interpolacja-gap3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="out" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
@@ -452,12 +394,19 @@
       <workItem from="1447630686582" duration="7732000" />
       <workItem from="1447785298611" duration="1080000" />
       <workItem from="1447867694307" duration="449000" />
-      <workItem from="1447868147198" duration="1692000" />
+      <workItem from="1447868147198" duration="5693000" />
     </task>
+    <task id="LOCAL-00001" summary="Resize paneli zrobiony">
+      <created>1447869920984</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1447869920985</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23360000" />
+    <option name="totallyTimeSpent" value="27361000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -480,7 +429,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19027181" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27144685" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27144685" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -500,9 +449,30 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Resize paneli zrobiony" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resize paneli zrobiony" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="41" />
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/JPanelChart.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/Okno3.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="48" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -517,6 +487,7 @@
           <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1985#1986#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -527,6 +498,10 @@
           <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -566,6 +541,7 @@
           <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1985#1986#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -576,6 +552,10 @@
           <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -615,6 +595,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1985#1986#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -625,6 +606,10 @@
           <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -671,6 +656,7 @@
           <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1985#1986#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -696,6 +682,7 @@
           <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1985#1986#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -721,6 +708,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1985#1986#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -764,23 +752,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JPanelChart.java">
+    <entry file="file://$USER_HOME$/Downloads/Java/Java1/Okno/build/classes/okno/Okno.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="31" />
+        <state vertical-scroll-proportion="-0.6050584">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Java/Java1/Okno/build/classes/okno/Okno2.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15400411">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="2" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#4711#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Okno3.java">
+    <entry file="file://$USER_HOME$/Downloads/Java/Java1/Okno/src/okno/Okno2.form">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="176" column="58" selection-start-line="176" selection-start-column="58" selection-end-line="176" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Java/Java1/Okno/src/okno/Okno.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19408503">
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -793,6 +795,39 @@
       </provider>
       <provider selected="true" editor-type-id="ui-designer">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Okno3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1985#1986#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/src.zip!/javax/swing/JComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4311" column="15" selection-start-line="4311" selection-start-column="15" selection-end-line="4311" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JPanelChart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.85979384">
+          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

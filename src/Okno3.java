@@ -1,7 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -63,11 +62,17 @@ public class Okno3 extends JFrame implements ActionListener{
                 t4y.setText("1");
             }
         });
+
+        this.addComponentListener(new ComponentAdapter() {
+            public void componentResized(ComponentEvent e) {
+                chartPanel.repaint();
+            }
+        });
     }
 
 //    @Override
 //    public void paint(Graphics g) {
-//        rightPanel.paint(g);
+//        chartPanel.repaint();
 //        if(myPointsList.size()>0){
 //            for(int i=0; i<myPointsList.size(); ++i){
 //                if(i==myPointsList.size()-1){
@@ -176,5 +181,6 @@ public class Okno3 extends JFrame implements ActionListener{
     private void createUIComponents() {
         // TODO: place custom component creation code here
         chartPanel = new JPanelChart();
+
     }
 }
