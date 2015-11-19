@@ -65,7 +65,10 @@ public class Okno3 extends JFrame implements ActionListener{
 
         this.addComponentListener(new ComponentAdapter() {
             public void componentResized(ComponentEvent e) {
-                chartPanel.repaint();
+                if(myPointsList.size()>0){
+                    ((JPanelChart) chartPanel).setMyPointsList(myPointsList);
+                    chartPanel.repaint();
+                }
             }
         });
     }
