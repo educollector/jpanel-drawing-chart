@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by olaskierbiszewska on 15.11.15.
  */
-public class Okno3 extends JFrame implements ActionListener{
+public class Okno3 extends JFrame {
     private JPanel rootPanel;
     private JPanel leftPointsPanel;
     private JTextField t0x;
@@ -43,34 +43,37 @@ public class Okno3 extends JFrame implements ActionListener{
         setVisible(true);
         setSize(600, 600);
 
-        obliczButton.addActionListener(this);
+        obliczButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                float area = calculateAreaUserData();
+                System.out.print("area" + area);
+                labelArea.setText("Pole: " + calculateAreaUserData() + " Obwód: " + String.format("%.2f", calculatePerimeter()));
+                chartPanel.repaint();
+            }
+        });
 
         textArea1.setText("Wprowadź współrzędne (x,y)\n kolejnych punktów");
 
         testDataButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                t0x.setText("1");
-                t0y.setText("1");
-                t1x.setText("2");
-                t1y.setText("4");
-                t2x.setText("3");
-                t2y.setText("4");
-                t3x.setText("4");
-                t3y.setText("4");
-                t4x.setText("5");
-                t4y.setText("1");
+//                setTestData();
+                Okno3.this.setTestData();
             }
         });
 
         this.addComponentListener(new ComponentAdapter() {
             public void componentResized(ComponentEvent e) {
-                if(myPointsList.size()>0){
-                    ((JPanelChart) chartPanel).setMyPointsList(myPointsList);
-                    chartPanel.repaint();
-                }
+                Okno3.this.reprintChart();
             }
         });
+    }
+
+    private void reprintChart(){
+        if(myPointsList.size()>0){
+            chartPanel.repaint();
+        }
     }
 
 //    @Override
@@ -116,7 +119,7 @@ public class Okno3 extends JFrame implements ActionListener{
         t1x.setText("2");
         t1y.setText("4");
         t2x.setText("3");
-        t2y.setText("4");
+        t2y.setText("3");
         t3x.setText("4");
         t3y.setText("4");
         t4x.setText("5");
@@ -124,6 +127,7 @@ public class Okno3 extends JFrame implements ActionListener{
     }
 
     public void readTextFieldsData(){
+        myPointsList.clear();
         JTextField[] fieldsArray = {t0x, t0y, t1x, t1y, t2x, t2y, t3x, t3y, t4x, t4y};
         Integer x = 0;
         Integer y = 0;
@@ -137,6 +141,7 @@ public class Okno3 extends JFrame implements ActionListener{
                 }
             }
         }
+        ((JPanelChart) chartPanel).setMyPointsList(myPointsList);
     }
     private double calculatePerimeter(){
         this.readTextFieldsData();
@@ -169,16 +174,6 @@ public class Okno3 extends JFrame implements ActionListener{
             area +=(pts[i + 1].x - pts[i].x) * (pts[i + 1].y + pts[i].y) / 2;
         }
         return area;
-    }
-
-    public void actionPerformed(ActionEvent ae) {
-        //    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-
-        if(ae.getSource() == obliczButton) {
-            float area = this.calculateAreaUserData();
-            System.out.print("area" + area);
-            labelArea.setText("Pole: " + this.calculateAreaUserData() + " Obwód: " + this.calculatePerimeter());
-        }
     }
 
     private void createUIComponents() {
