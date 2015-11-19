@@ -21,6 +21,18 @@ public class JPanelChart extends JPanel {
         // set a preferred size for the custom panel.
         //setPreferredSize(new Dimension(420,420));
     }
+    private int calculateUnit(){
+        int max = Integer.MIN_VALUE;
+        for(Point p:myPointsList){
+            if(Math.abs(p.x)>max){
+                max = Math.abs(p.x);
+            }
+            if(Math.abs(p.y)>max){
+                max = Math.abs(p.y);
+            }
+        }
+        return myPointsList.size()>0 ? (this.getWidth()/2)/max/2 : 15;
+    }
 
     @Override
     public void paint(Graphics g) {
@@ -28,8 +40,7 @@ public class JPanelChart extends JPanel {
         g.setColor(Color.white);
         g.fillRect(0, 0, this.getWidth() - 30, this.getHeight() - 30);
         g.setColor(Color.black);
-        //TODO obliczyc unit zeby zmiescla sie cala figura?
-        int unit = 15;
+        int unit = this.calculateUnit();
         int shiftX = this.getWidth() / 2;
         int shiftY = this.getHeight() / 2;
         //X axis
@@ -42,7 +53,7 @@ public class JPanelChart extends JPanel {
         g.drawLine(xX2 - 5, xY1 - 5, xX2, xY2);
         g.drawLine(xX2 - 5, xY1 + 5, xX2, xY2);
         //X ruler
-        int crossPoint = 0;
+        int crossPoint = 0; //X value indicating cross point od X and Y
         for (int i = 0; i < xX2 - unit; i += unit) {
             g.drawLine(xX1, xY1 - 2, xX1, xY1 + 2);
             xX1 += unit;
@@ -81,9 +92,9 @@ public class JPanelChart extends JPanel {
                 int nextPointIndex = i < myPointsList.size() - 1 ? i + 1 : 0;
                 Point next = myPointsList.get(nextPointIndex);
                 g.drawLine(
-                        curr.x * unit + shiftX,
+                        curr.x * unit + (crossPoint/2)*unit,
                         -curr.y * unit + shiftY,
-                        next.x * unit + shiftX,
+                        next.x * unit + (crossPoint/2)*unit,
                         -next.y * unit + shiftY
                 );
             }
