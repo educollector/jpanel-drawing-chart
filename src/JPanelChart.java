@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * Created by olaskierbiszewska on 16.11.15.
@@ -84,8 +85,10 @@ public class JPanelChart extends JPanel {
             jump -= unit;
         }
 
+
         //draw shape
         if (myPointsList.size() > 0) {
+            this.lagrangePolynomial(5.0f);
             g.setColor(Color.green);
             for (int i = 0; i < myPointsList.size(); ++i) {
                 Point curr = myPointsList.get(i);
@@ -98,6 +101,72 @@ public class JPanelChart extends JPanel {
                         -next.y * unit + shiftY
                 );
             }
+            //draw function
+            g.drawLine(38,1,4,57);
+            int prevX=-3;
+            int prevY = (int)this.lagrangePolynomial(prevX);
+            int nextX = 0;
+            int nextY = 0;
+            for(int i=0; i < 5; i++){
+                nextX += unit;
+                nextY = (int)this.lagrangePolynomial(i);
+                g.drawLine(
+                        prevX * unit + (crossPoint/2)*unit ,
+                        prevY * unit + shiftY,
+                        nextX * unit + (crossPoint/2)*unit,
+                        nextY * unit + shiftY
+                );
+                prevX = nextX;
+                prevY = nextY;
+
+            }
         }
+    }
+
+
+    private int lagrangePolynomial(float myX) {
+        //Declaration of the scanner variable
+        Scanner myScanner = new Scanner(System.in);
+
+        //Declaration of variables
+        int count, count2;
+
+        float [] arrayx = new float[myPointsList.size()]; //Array limit 199
+        float [] arrayy = new float[myPointsList.size()]; //Array limit 199
+
+        for(int i=0; i< myPointsList.size(); ++i){
+            arrayx[i] = (float)myPointsList.get(i).x;
+            arrayy[i] = (float)myPointsList.get(i).y;
+        }
+
+
+        //The arbitrary value, x to be entered for
+        //which the value of y can be known
+        float x = myX;
+        float y = 0; //The corresponding value, f(x)=y
+        float numerator; //The numerator
+        float denominator;  //The denominator
+
+
+
+        //first Loop for the polynomial calculation
+        for(count = 0; count<myPointsList.size(); count++)
+        {
+            //Initialisation of variable
+            numerator = 1; denominator = 1;
+
+            //second Loop for the polynomial calculation
+            for (count2 = 0; count2<myPointsList.size(); count2++)
+            {
+                if (count2 != count)
+                {
+                    numerator = numerator * (x - arrayx[count2]);
+                    denominator = denominator * (arrayx[count] - arrayx[count2]);
+                }
+            }
+            y = y + (numerator/denominator) * arrayy[count];
+        }
+        System.out.println("YOLO ____When x = " + x + "," + " y = " +  y);
+        return (int)y;
     }
 }
